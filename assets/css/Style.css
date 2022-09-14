@@ -4,29 +4,25 @@
 
 @import url("https://fonts.google.com/specimen/Work+Sans?hl=ru");
 
-/* Variables */
 :root {
-  --font-family: "Roboto", sans-serf;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #fcfcfc;
-  --primary-color: #575757;
-  --secondary-color: #ff7235;
-  --primary-shadow: #8b8eaf;
-  --secondary-shadow: #a17a69;
+  --bg-color: #ffffffe8;
+  --primary-color: #000000;
+  --secondary-color: #818181;
+  --primary-shadow: #8f8f8f;
+  --secondary-shadow: #8f8f8f;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
-/* Variables end */
 
 html {
   scroll-behavior: smooth;
 }
 
-/* CSS Resets */
 * {
   margin: 0;
   padding: 0;
@@ -48,6 +44,7 @@ a:hover {
 
 body {
   font-family: var(--font-family);
+  background-image: url(../images/adobe-277309825_1.jpg);
 }
 
 nav {
@@ -85,47 +82,32 @@ nav ul li {
   font-weight: var(--bold-font);
 }
 
-
-.hero {
+.daniel {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-  max-width: 68.75rem;
   margin: auto;
 }
 
-.hero img {
+.daniel img {
   width: 37.5rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  border-radius: 50%;
 }
 
-.bio {
-  width: 25rem;
-  padding: 0.625rem;
-  border-radius: 6px;
-  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-}
-
-.bio h1 {
-  margin-bottom: var(--bottom-margin);
-}
-
-.bio p {
-  line-height: var(--line-height);
-  padding: 0.3rem 0;
-}
-
-.more-about {
+.about {
   background-color: var(--bg-color);
   padding: 1rem 6rem;
 }
 
-.more-about h2 {
+.about h2 {
   margin-bottom: var(--bottom-margin);
   text-align: center;
 }
 
-.more-about p {
+.about p {
   line-height: var(--line-height);
   padding: 0.4rem;
 }
@@ -269,37 +251,30 @@ nav ul li {
 }
 
 @media screen and (max-width: 720px) {
-  /*changes reflects on screen with a width of 720px and below*/
-  nav {
-    padding: 1.5rem 1rem;
+nav {
+    flex-direction: column;
     }
 
-.hero {
-  margin-top: -4rem;
+.daniel {
   flex-direction: column;
   gap: 0;
 }
 
-.hero img {
-      height: 37.5rem;
+.daniel img {
       width: 30rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
   }
 
-.bio {
-  margin-top: -7rem;
-  width: 20.5rem;
+.about {
+  padding: 1rem 3rem;
 }
 
-.more-about {
-  margin-top: 2rem;
-  padding: 1rem 3.5rem;
-}
-
-.more-about h2 {
+.about h2 {
   text-align: center;
 }
 
-.more-about p {
+.about p {
   text-align: justify;
 }
 
@@ -321,13 +296,8 @@ nav ul li {
 }
 
 @media screen and (max-width: 420px) {
-  .hero img {
-    height: 37.5rem;
+  .daniel img {
     width: 23rem;
-  }
-
-  .bio {
-    width: 18.3rem;
   }
 
   .project-container {
