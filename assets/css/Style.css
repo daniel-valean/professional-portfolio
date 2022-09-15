@@ -193,14 +193,21 @@ nav ul li {
   
 }
 
+
 .contact h2 {
   text-align: center;
 }
 
-.contact p {
-  display: flex;
+.contact ul {
+  display: inline-block;
   padding: 1rem 6rem;
-  margin: 2rem;
+  margin: auto;
+  justify-content:;
+}
+
+.contact li {
+  list-style: none;
+  margin: auto;
 }
 
 .contact-container {
