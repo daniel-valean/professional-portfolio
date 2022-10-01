@@ -151,6 +151,10 @@ nav ul li {
   height: 60%;
 }
 
+.wingman{
+  width: 82%;
+}
+
 .projects-container {
   display: flex;
   align-items: center;
@@ -166,6 +170,10 @@ nav ul li {
   text-align: center;
   width: 21.875rem;
   padding: 1rem;
+}
+
+.project-link{
+  color: rgb(255, 255, 255);
 }
 
 .project-container p {
